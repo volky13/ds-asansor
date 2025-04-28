@@ -1,0 +1,1 @@
+// Simulated content of draco_wasm_wrapper.js
