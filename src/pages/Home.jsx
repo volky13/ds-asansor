@@ -12,6 +12,9 @@ const Home = () => {
           <div className="hero-content">
             <h1>DS Asansör</h1>
             <p>Güvenli, estetik ve modern asansör çözümleri</p>
+            <Link to="/simulation" className="btn-1">
+              🛠️ Kendi Kabinini Kendin Tasarla
+            </Link>
             <Link to="/products" className="btn">
               Ürünlerimize Göz Atın
             </Link>

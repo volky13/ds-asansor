@@ -1,117 +1,62 @@
-/* Ana konteyner */
 .simulation-container {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  background: linear-gradient(to right, #f0f4f8, #e0f7fa);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* 3D modelin olduğu sol bölüm */
 .canvas-section {
   flex: 2;
-  background-color: #ffffff;
-  border-right: 2px solid #ccc;
-  position: relative;
-}
-/* Başlık alanı */
-.simulation-header {
-  width: 100%;
-  padding: 16px 32px;
-  background-color: #0e7490;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.simulation-header h1 {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0;
-}
-
-/* Sağdaki ayar paneli */
 .options-section {
   flex: 1;
-  padding: 30px;
-  background-color: #f8fafc;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+  margin: 20px 20px 20px 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-
-.options-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #0f172a;
-}
-
-/* Renk butonları */
-.color-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.color-buttons button {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.color-buttons button:hover {
-  transform: scale(1.1);
-  border-color: #0e7490;
-}
-
-/* Slider stilleri */
-.options-section input[type="range"] {
-  width: 100%;
-  margin: 10px 0 20px;
-}
-
-/* Etiketler */
-.options-section label {
-  font-weight: 600;
-  font-size: 14px;
-  color: #334155;
+  justify-content: space-between;
 }
 
 /* PDF butonu */
-.download-button {
-  margin-top: auto;
-  padding: 12px;
-  background-color: #0e7490;
+.pdf-button {
+  background-color: #007BFF;
   color: white;
+  font-weight: bold;
   border: none;
+  padding: 14px;
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background 0.2s ease;
 }
 
-.download-button:hover {
-  background-color: #155e75;
+.pdf-button:hover {
+  background-color: #0056b3;
 }
 
-/* Mobil uyumlu yapı */
-@media screen and (max-width: 768px) {
+/* Mobil uyum */
+@media (max-width: 768px) {
   .simulation-container {
     flex-direction: column;
   }
 
   .canvas-section,
   .options-section {
-    flex: none;
     width: 100%;
-    height: 50%;
+    margin: 10px 0;
+  }
+
+  .options-section {
+    padding: 16px;
   }
 }
